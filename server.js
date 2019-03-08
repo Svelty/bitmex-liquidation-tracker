@@ -50,6 +50,9 @@ http.createServer(app).listen(port, () => {
     console.log(`http://localhost:${port}`);
 });
 
-const LiquidationTracker = require('./service/liquidation-tracker');
-LiquidationTracker();
+// const LiquidationTracker = require('./service/liquidation-tracker');
+// LiquidationTracker();
+
+const orderbook = require('./service/orderbook');
+orderbook();
 
